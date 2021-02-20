@@ -1,5 +1,5 @@
 ## Laravel Authentication & TODO
-###Requirements
+### Requirements
 - Bootstrap Install
 ````
 composer require laravel/ui
@@ -39,7 +39,7 @@ public/css/toastr/toastr.min.css
 public/js/toastr/toastr.min.js
 ````
 
-###Configuration
+### Configuration
 routes/web.php for need.
 ````
 app/Providers/RouteServiceProvider.php
@@ -51,20 +51,20 @@ app/Providers/AppServiceProvider.php
 Paginator::useBootstrap();
 ````
 
-###Information
-#####Admin Account
+### Information
+##### Admin Account
 ````
 username: murat
 password: 1234
 ````
 
-#####Member Account
+##### Member Account
 ````
 username: kerem
 password: 1234
 ````
 
-#####Middleware
+##### Middleware
 ````
 app/Http/Kernel.php
 
@@ -72,7 +72,7 @@ protected $routeMiddleware = [
 'admin' => \App\Http\Middleware\Admin\AdminAuth::class, //Admin check
 'permission' => \App\Http\Middleware\Admin\AdminPermission::class, //Admin Check + Permission Check 
 ````
-#####Auth Config
+##### Auth Config
 ````
 config/auth.php
 
